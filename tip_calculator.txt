@@ -1,0 +1,19 @@
+print("Welcome to the tip calculator!")
+bill = input("What was the total bill? $")
+tip_percentage = input("How much tip would you like to give? 10, 12, or 15? ")
+bill_split = input("How many people to split the bill? ")
+
+bill_split_as_int = int(bill_split)
+ten_percent = int(bill) * 1.1 / bill_split_as_int
+twelve_percent = int(bill) * 1.12 / bill_split_as_int
+fifteen_percent = int(bill) * 1.15 / bill_split_as_int
+
+
+if tip_percentage == "10":
+    print(f"Each person should pay: ${round(ten_percent, 2)}")
+elif tip_percentage == "12":
+    print(f"Each person should pay: ${round(twelve_percent, 2)}")
+elif tip_percentage == "15":
+    print(f"Each person should pay: ${round(fifteen_percent, 2)}")
+
+

@@ -1,0 +1,25 @@
+print("Hi, welcome to Starbucks Coffee")
+
+
+size_of_coffee = input("What size of coffee do you want? Tall, Grande or Venti? ")
+shot = input("How many shot do you want? Single or Double? ")
+hot_or_iced = input("Do you want it Hot or Iced? ")
+
+bill = 0
+
+if size_of_coffee == "Tall":
+    bill = 150
+elif size_of_coffee == "Grande":
+    bill = 170
+else:
+    bill = 190
+
+if shot == "Double":
+    bill += 20
+    if shot == "Single":
+        bill += 0
+
+if hot_or_iced == "Hot":
+    print(f"Your order is 1 {size_of_coffee} {shot} shot {hot_or_iced} coffee, and your bill is {bill} PHP.")
+else:
+    print(f"Your order is 1 {size_of_coffee} {shot} shot {hot_or_iced} coffee, and your bill is {bill} PHP.")

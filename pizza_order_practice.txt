@@ -1,0 +1,46 @@
+
+size = input("")
+add_pepperoni = input("")
+extra_cheese = input("")
+
+bill = 0
+
+if size == "S":
+  bill = 15
+  if add_pepperoni == "Y":
+    bill += 2
+  elif add_pepperoni == "N":
+    bill += 0
+  if extra_cheese == "Y":
+    bill += 1
+    print(f"Thank you for choosing Python Pizza Deliveries! Your final bill is: ${bill}")
+  elif extra_cheese == "N":
+    bill += 0
+    print(f"Thank you for choosing Python Pizza Deliveries! Your final bill is: ${bill}")
+
+elif size == "M":
+  bill = 20
+  if add_pepperoni == "Y":
+    bill += 3
+  elif add_pepperoni == "N":
+    bill += 0
+  if extra_cheese == "Y":
+    bill += 1
+    print(f"Thank you for choosing Python Pizza Deliveries! Your final bill is: ${bill}")
+  elif extra_cheese == "N":
+    bill += 0
+    print(f"Thank you for choosing Python Pizza Deliveries! Your final bill is: ${bill}")
+
+elif size == "L":
+  bill = 25
+  if add_pepperoni == "Y":
+    bill += 3
+  elif add_pepperoni == "N":
+    bill += 0
+  if extra_cheese == "Y":
+    bill += 1
+    print(f"Thank you for choosing Python Pizza Deliveries! Your final bill is: ${bill}")
+  elif extra_cheese == "N":
+    bill += 0
+    print(f"Thank you for choosing Python Pizza Deliveries! Your final bill is: ${bill}")
+

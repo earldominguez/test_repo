@@ -1,0 +1,89 @@
+# import random
+#
+# random_integer = random.randint(1, 10)
+# print(random_integer)
+#
+# random_float = random.random()
+# print(random_float)
+# import random
+#
+# random_index = random.randint(0, 4)
+#
+# names = ["a", "b", "c", "d", "e"]
+#
+# print(names[random_index])
+
+
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+rps = [rock, paper, scissors]
+
+import random
+
+random_integer = random.randint(0, 2)
+
+computer = rps[random_integer]
+
+choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+
+if choice >= 3 or choice < 0:
+    print("You lose! You put an invalid number!")
+
+else:
+    print(rps[choice])
+
+    print(f'''
+    Computer chose:
+    {computer}
+
+    ''')
+
+    if choice == 0 and random_integer == 0:
+        print("The game is draw!")
+    elif choice == 0 and random_integer == 1:
+        print("You lose! :(")
+    elif choice == 0 and random_integer == 2:
+        print("You win! :)")
+    elif choice == 1 and random_integer == 0:
+        print("You win! :)")
+    elif choice == 1 and random_integer == 1:
+        print("The game is draw!")
+    elif choice == 1 and random_integer == 2:
+        print("You lose! :(")
+    elif choice == 2 and random_integer == 0:
+        print("You lose! :(")
+    elif choice == 2 and random_integer == 1:
+        print("You win! :)")
+    elif choice == 2 and random_integer == 2:
+        print("The game is draw!")
+
+
+
+
